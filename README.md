@@ -124,8 +124,22 @@ npx http-server
 ### Vercel
 
 1. Push code lên GitHub
-2. Import project vào Vercel
-3. Vercel sẽ tự động detect và deploy
+2. Import project vào Vercel:
+   - Truy cập [vercel.com](https://vercel.com) và đăng nhập bằng GitHub
+   - Click "Add New Project"
+   - Chọn repository `trandaitai327/QHP_website`
+   - **Quan trọng**: Đặt **Project Name** là một trong các tên sau (chỉ chữ thường, số, dấu gạch ngang):
+     - `qhp-website` ✅
+     - `quang-hien-phat-website` ✅
+     - `qhp_website` ✅
+   - **Không được dùng**: chữ hoa, khoảng trắng, ký tự đặc biệt
+   - Framework Preset: **Other**
+   - Build Command: để trống
+   - Output Directory: `./`
+   - Install Command: để trống
+3. Click "Deploy" - Vercel sẽ tự động deploy
+
+**Lưu ý**: Nếu gặp lỗi "A Project name can only contain up to 100 lowercase letters, digits, and the characters '.', '_', and '-'", hãy đảm bảo tên project chỉ chứa chữ thường, số, và các ký tự `.`, `_`, `-`.
 
 Hoặc sử dụng Vercel CLI:
 ```bash
