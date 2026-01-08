@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sản phẩm - Quang Hiền Phát</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Animations CSS -->
+    <link href="assets/css/animations.css" rel="stylesheet"/>
+    <!-- Navigation CSS -->
+    <link href="assets/css/navigation.css" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "primary-dark": "#0d3ca0",
+                        "accent": "#f59e0b",
+                        "background-light": "#f8f9fc",
+                        "background-dark": "#101622",
+                        "surface": "#ffffff",
+                        "text-main": "#0d121b",
+                        "text-secondary": "#4c669a",
+                        "border-light": "#e7ebf3",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.375rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light text-text-main font-display antialiased">
+    <div class="flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- TopNavBar -->
+        <header class="sticky top-0 z-50 w-full border-b border-solid border-neutral-200 bg-background-light/95 dark:bg-background-dark/95 dark:border-neutral-700 backdrop-blur-sm">
+            <div class="flex items-center justify-between px-6 py-4 lg:px-10 max-w-[1440px] mx-auto">
+                <div class="flex items-center gap-4 text-neutral-900 dark:text-white">
+                    <a href="index.html" class="flex items-center gap-4">
+                        <div class="size-8 text-primary">
+                            <span class="material-symbols-outlined !text-[32px]">precision_manufacturing</span>
+                        </div>
+                        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] hidden sm:block">Quang Hiền Phát</h2>
+                    </a>
+                </div>
+                <!-- Navigation Links (Desktop) -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="index.html">Trang chủ</a>
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="about.html">Giới thiệu</a>
+                    <a class="text-sm font-medium text-primary dark:text-white transition-all active" href="products.html">Sản phẩm</a>
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="capabilities.html">Năng lực</a>
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="contact.html">Liên hệ</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <div class="hidden md:flex relative group">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-text-secondary group-focus-within:text-primary">
+                            <span class="material-symbols-outlined text-[20px]">search</span>
+                        </div>
+                        <input id="searchInput" class="block w-full rounded-lg border-0 py-2 pl-10 pr-3 text-text-main ring-1 ring-inset ring-border-light placeholder:text-text-secondary focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 bg-background-light" placeholder="Tìm kiếm sản phẩm..." type="text"/>
+                    </div>
+                    <a href="contact.html" class="hidden md:flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-white text-sm font-bold shadow-lg shadow-primary/30 hover:bg-blue-700 transition-all">
+                        <span class="truncate">Nhận báo giá</span>
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 text-neutral-900 dark:text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Layout -->
+        <div class="flex flex-col flex-1 max-w-[1440px] mx-auto w-full px-4 md:px-10 py-6 md:py-10 fade-in">
+            <!-- Page Heading & Breadcrumbs -->
+            <div class="mb-8 animate-on-scroll animate-fade-up">
+                <nav aria-label="Breadcrumb" class="flex mb-4 text-sm text-text-secondary">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a class="hover:text-primary" href="index.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <span class="material-symbols-outlined text-sm mx-1">chevron_right</span>
+                                <span class="font-medium text-text-main">Sản phẩm</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-3xl md:text-4xl font-black text-text-main tracking-tight text-reveal">Danh mục Sản phẩm & Dịch vụ</h1>
+                    <p class="text-text-secondary text-base md:text-lg max-w-3xl">Giải pháp gia công cơ khí chính xác toàn diện, đáp ứng các tiêu chuẩn kỹ thuật khắt khe nhất cho doanh nghiệp sản xuất.</p>
+                </div>
+            </div>
+
+            <!-- Content Layout: Sidebar + Grid -->
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Sidebar Filters -->
+                <aside class="w-full lg:w-64 shrink-0 space-y-8">
+                    <!-- Mobile Filter Toggle -->
+                    <button class="lg:hidden flex w-full items-center justify-between rounded-lg border border-border-light bg-white p-3 font-medium shadow-sm">
+                        <span>Bộ lọc sản phẩm</span>
+                        <span class="material-symbols-outlined">filter_list</span>
+                    </button>
+                    <div class="hidden lg:block space-y-6">
+                        <!-- Filter Group: Category -->
+                        <div class="space-y-3">
+                            <h3 class="text-sm font-bold uppercase tracking-wider text-text-secondary">Loại sản phẩm</h3>
+                            <div class="space-y-2" id="categoryFilters">
+                                <!-- Categories will be populated by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="h-px bg-border-light w-full"></div>
+                        <!-- Filter Group: Material -->
+                        <div class="space-y-3">
+                            <h3 class="text-sm font-bold uppercase tracking-wider text-text-secondary">Vật liệu</h3>
+                            <div class="space-y-2" id="materialFilters">
+                                <!-- Materials will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product Grid Area -->
+                <div class="flex-1">
+                    <!-- Toolbar -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+                        <div class="flex gap-2 overflow-x-auto pb-2 sm:pb-0 w-full no-scrollbar">
+                            <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-4 cursor-pointer" data-sort="all">
+                                <span class="text-sm font-medium">Tất cả</span>
+                            </div>
+                            <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white border border-border-light hover:border-primary px-4 cursor-pointer transition-colors group" data-sort="featured">
+                                <span class="text-sm font-medium text-text-secondary group-hover:text-primary">Nổi bật</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 whitespace-nowrap">
+                            <span class="text-sm text-text-secondary" id="productCount">Hiển thị 0 / 0 sản phẩm</span>
+                        </div>
+                    </div>
+
+                    <!-- Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 stagger-container" id="productGrid">
+                        <!-- Products will be rendered here by JavaScript -->
+                    </div>
+
+                    <!-- Empty State -->
+                    <div id="emptyState" class="hidden text-center py-12">
+                        <span class="material-symbols-outlined text-6xl text-text-secondary mb-4">inventory_2</span>
+                        <p class="text-text-secondary text-lg">Không tìm thấy sản phẩm nào</p>
+                        <p class="text-text-secondary text-sm mt-2">Vui lòng thử lại với bộ lọc khác</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-background-dark text-white pt-16 pb-8">
+            <div class="max-w-[1440px] mx-auto px-4 md:px-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-2 text-white">
+                            <span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+                            <span class="text-xl font-bold">Quang Hiền Phát</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">Đơn vị chuyên gia công cơ khí chính xác, chế tạo máy và cung cấp giải pháp công nghiệp uy tín.</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-lg font-bold text-white">Liên hệ</h4>
+                        <ul class="flex flex-col gap-3 text-sm text-gray-400">
+                            <li class="flex items-start gap-2">
+                                <span class="material-symbols-outlined text-[18px] mt-0.5">location_on</span>
+                                <span>Ngã tư Thủ Đức, Thủ Đức, TPHCM, Việt Nam</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">phone</span>
+                                <span>0123456789</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">mail</span>
+                                <span>contact@quanghienphat.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                    <div class="flex flex-col gap-2">
+                        <p>© 2024 Quang Hiền Phát. Bảo lưu mọi quyền.</p>
+                        <p>Phát triển bởi: <a href="tel:0792452918" class="hover:text-white transition-colors">Trần Đại Tài</a> - <a href="tel:0792452918" class="hover:text-white transition-colors">0792452918</a></p>
+                    </div>
+                    <div class="flex gap-6">
+                        <a class="hover:text-white transition-colors" href="#">Điều khoản</a>
+                        <a class="hover:text-white transition-colors" href="#">Chính sách bảo mật</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Load products data -->
+    <script src="assets/js/products.js"></script>
+    <!-- Load render script -->
+    <script src="assets/js/render-products.js"></script>
+    <!-- Animations Script -->
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

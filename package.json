@@ -1,0 +1,26 @@
+{
+  "name": "quang-hien-phat-website",
+  "version": "1.0.0",
+  "description": "Website trưng bày sản phẩm gia công, máy móc và thiết bị của công ty Quang Hiền Phát",
+  "private": true,
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "static-website",
+    "quang-hien-phat",
+    "manufacturing",
+    "cnc",
+    "vietnam"
+  ],
+  "author": "Quang Hiền Phát",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trandaitai327/QHP_website.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

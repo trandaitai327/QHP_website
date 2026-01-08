@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Trang Liên hệ - Quang Hiền Phát</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Animations CSS -->
+    <link href="assets/css/animations.css" rel="stylesheet"/>
+    <!-- Navigation CSS -->
+    <link href="assets/css/navigation.css" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "accent-orange": "#f97316",
+                        "background-light": "#f8f9fc",
+                        "background-dark": "#101622",
+                        "text-main": "#0d121b",
+                        "text-sub": "#4c669a",
+                        "border-color": "#e7ebf3",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+</head>
+<body class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark font-display text-text-main overflow-x-hidden">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 w-full border-b border-neutral-200 bg-background-light/95 dark:bg-background-dark/95 dark:border-neutral-700 backdrop-blur-sm">
+        <div class="flex items-center justify-between px-6 py-4 lg:px-10 max-w-[1440px] mx-auto">
+                <!-- Logo -->
+                <div class="flex items-center gap-4 text-neutral-900 dark:text-white">
+                    <a href="index.html" class="flex items-center gap-4">
+                        <div class="size-8 text-primary">
+                            <span class="material-symbols-outlined !text-[32px]">precision_manufacturing</span>
+                        </div>
+                        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] hidden sm:block">Quang Hiền Phát</h2>
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="index.html">Trang chủ</a>
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="about.html">Giới thiệu</a>
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="products.html">Sản phẩm</a>
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="capabilities.html">Năng lực</a>
+                    <a class="text-sm font-medium text-primary dark:text-white transition-all active" href="contact.html">Liên hệ</a>
+                </nav>
+                <!-- Actions -->
+                <div class="flex items-center gap-4">
+                    <a href="contact.html" class="hidden lg:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary hover:bg-blue-700 transition-colors text-white text-sm font-bold shadow-sm ring-offset-2 focus:ring-2 ring-primary">
+                        <span>Yêu cầu báo giá</span>
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 text-text-main dark:text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow fade-in">
+        <!-- Hero Section -->
+        <section class="relative w-full bg-white dark:bg-gray-900 border-b border-border-color dark:border-gray-800">
+            <!-- Background Decoration -->
+            <div class="absolute inset-0 z-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#4c669a_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="layout-container flex justify-center py-10 md:py-16 px-4 md:px-10 relative z-10">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="flex flex-col gap-4 text-center md:text-left animate-on-scroll animate-fade-up">
+                        <span class="text-accent-orange font-bold text-sm tracking-widest uppercase mb-1 animate-on-scroll animate-zoom">Kết nối hợp tác</span>
+                        <h1 class="text-text-main dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] text-reveal">
+                            Liên hệ Quang Hiền Phát
+                        </h1>
+                        <p class="text-text-sub dark:text-gray-400 text-lg font-normal leading-relaxed max-w-2xl">
+                            Đối tác gia công cơ khí chính xác uy tín của bạn. Hãy gửi yêu cầu để nhận tư vấn kỹ thuật chuyên sâu và báo giá chi tiết.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content Grid Section -->
+        <section class="layout-container flex justify-center py-12 px-4 md:px-10">
+            <div class="layout-content-container flex flex-col md:flex-row gap-10 max-w-[1200px] w-full">
+                <!-- Left Column: Contact Info & Map -->
+                <div class="flex-1 flex flex-col gap-8">
+                    <!-- Contact Cards -->
+                    <div class="flex flex-col gap-6">
+                        <div class="mb-2">
+                            <h2 class="text-text-main dark:text-white text-2xl font-bold leading-tight">Thông tin liên hệ</h2>
+                            <p class="text-text-sub dark:text-gray-400 text-sm mt-2">Chúng tôi luôn sẵn sàng hỗ trợ 24/7 cho các yêu cầu khẩn cấp.</p>
+                        </div>
+                        <div class="grid gap-4">
+                            <!-- Address -->
+                            <div class="flex gap-4 items-start p-4 rounded-xl border border-border-color bg-white dark:bg-gray-800 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                                <div class="bg-primary/10 p-3 rounded-lg text-primary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-text-main dark:text-white text-base font-bold">Nhà máy sản xuất</h3>
+                                    <p class="text-text-sub dark:text-gray-400 text-sm mt-1">Ngã tư Thủ Đức, Thủ Đức, TPHCM, Việt Nam</p>
+                                </div>
+                            </div>
+                            <!-- Hotline -->
+                            <div class="flex gap-4 items-start p-4 rounded-xl border border-border-color bg-white dark:bg-gray-800 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                                <div class="bg-primary/10 p-3 rounded-lg text-primary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-text-main dark:text-white text-base font-bold">Hotline Kỹ thuật</h3>
+                                    <p class="text-text-sub dark:text-gray-400 text-sm mt-1">0123456789 <span class="text-accent-orange text-xs font-bold ml-1">(Hỗ trợ 24/7)</span></p>
+                                </div>
+                            </div>
+                            <!-- Email -->
+                            <div class="flex gap-4 items-start p-4 rounded-xl border border-border-color bg-white dark:bg-gray-800 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                                <div class="bg-primary/10 p-3 rounded-lg text-primary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined">mail</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-text-main dark:text-white text-base font-bold">Email Kinh doanh</h3>
+                                    <p class="text-text-sub dark:text-gray-400 text-sm mt-1">sales@quanghienphat.com</p>
+                                    <p class="text-text-sub dark:text-gray-400 text-sm">support@quanghienphat.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Map -->
+                    <div class="w-full h-[300px] rounded-2xl overflow-hidden shadow-md border border-border-color dark:border-gray-700 relative group">
+                        <!-- Placeholder for map - in real implementation this would be an iframe -->
+                        <div class="absolute inset-0 bg-cover bg-center" data-alt="Google Map view of industrial area in Ho Chi Minh City" data-location="Ho Chi Minh City, Vietnam" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlQ7W5BJ6bQIZVTFoLZ7uuAqm3dZn1jC9TRHjm_vNmBLZOBvBn9IS-lUV7um-BG_VQkO83DSkMOkg9GEvK09bnHYlJnlsNN0rOse7ITxb4zZomcwCmOQGOnZ4DtaMziOQcmDBgGhMxOFKS-n0ewAnzCo-kcA_Poxn8diIuMoNOfd5-Pr20jkOUR_OkWB3J80YRp9NgkooLc4ZKMKCg1CoBZ-zGKT1KajOYawL9yQpUdRDd37VMTeNIwI_nfaoZuraA4n3W6BdZ4P4');">
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all"></div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-white dark:bg-gray-900 px-4 py-2 rounded-lg shadow-lg flex items-center gap-2">
+                            <span class="material-symbols-outlined text-red-500 text-sm">place</span>
+                            <span class="text-xs font-bold text-gray-800 dark:text-white">Xem trên Google Maps</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column: Inquiry Form -->
+                <div class="flex-[1.4] bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-border-color dark:border-gray-700 overflow-hidden">
+                    <div class="p-8 md:p-10 flex flex-col h-full">
+                        <div class="mb-8">
+                            <h2 class="text-text-main dark:text-white text-2xl font-black leading-tight tracking-tight">Gửi yêu cầu báo giá</h2>
+                            <p class="text-text-sub dark:text-gray-400 text-sm mt-2">Vui lòng điền thông tin chi tiết. Kỹ sư của chúng tôi sẽ phản hồi trong vòng 24h.</p>
+                        </div>
+                        <form class="flex flex-col gap-5 h-full" onsubmit="event.preventDefault();">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div class="flex flex-col gap-1.5">
+                                    <label class="text-sm font-semibold text-text-main dark:text-gray-200">Họ và tên <span class="text-accent-orange">*</span></label>
+                                    <input class="w-full h-11 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 px-4 text-sm outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:text-white placeholder:text-gray-400 transition-all" placeholder="Nguyễn Văn A" type="text"/>
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <label class="text-sm font-semibold text-text-main dark:text-gray-200">Công ty / Tổ chức <span class="text-accent-orange">*</span></label>
+                                    <input class="w-full h-11 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 px-4 text-sm outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:text-white placeholder:text-gray-400 transition-all" placeholder="Tên công ty của bạn" type="text"/>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div class="flex flex-col gap-1.5">
+                                    <label class="text-sm font-semibold text-text-main dark:text-gray-200">Email công việc <span class="text-accent-orange">*</span></label>
+                                    <input class="w-full h-11 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 px-4 text-sm outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:text-white placeholder:text-gray-400 transition-all" placeholder="name@company.com" type="email"/>
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <label class="text-sm font-semibold text-text-main dark:text-gray-200">Số điện thoại <span class="text-accent-orange">*</span></label>
+                                    <input class="w-full h-11 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 px-4 text-sm outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:text-white placeholder:text-gray-400 transition-all" placeholder="0901 xxx xxx" type="tel"/>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1.5">
+                                <label class="text-sm font-semibold text-text-main dark:text-gray-200">Loại dịch vụ quan tâm</label>
+                                <div class="relative">
+                                    <select class="w-full h-11 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 px-4 text-sm outline-none focus:ring-2 focus:ring-primary focus:border-transparent appearance-none dark:text-white text-gray-700 transition-all cursor-pointer">
+                                        <option disabled="" selected="" value="">Chọn loại gia công...</option>
+                                        <option value="cnc_milling">Phay CNC Chính xác</option>
+                                        <option value="cnc_turning">Tiện CNC</option>
+                                        <option value="wire_cut">Cắt dây EDM</option>
+                                        <option value="grinding">Mài phẳng / Mài tròn</option>
+                                        <option value="custom">Gia công theo bản vẽ yêu cầu</option>
+                                    </select>
+                                    <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
+                                        <span class="material-symbols-outlined text-xl">expand_more</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1.5">
+                                <label class="text-sm font-semibold text-text-main dark:text-gray-200">Bản vẽ kỹ thuật (PDF, DWG, DXF, STEP)</label>
+                                <div class="w-full rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-primary dark:hover:border-primary bg-gray-50 dark:bg-gray-700/50 p-6 flex flex-col items-center justify-center text-center cursor-pointer transition-colors group/upload">
+                                    <div class="bg-white dark:bg-gray-800 p-3 rounded-full shadow-sm mb-3 group-hover/upload:scale-110 transition-transform">
+                                        <span class="material-symbols-outlined text-primary text-2xl">cloud_upload</span>
+                                    </div>
+                                    <p class="text-sm font-medium text-text-main dark:text-gray-200">Bấm để tải lên hoặc kéo thả vào đây</p>
+                                    <p class="text-xs text-text-sub dark:text-gray-500 mt-1">Dung lượng tối đa 25MB.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-1.5">
+                                <label class="text-sm font-semibold text-text-main dark:text-gray-200">Yêu cầu kỹ thuật chi tiết</label>
+                                <textarea class="w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 p-4 text-sm outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:text-white placeholder:text-gray-400 transition-all resize-none" placeholder="Mô tả về vật liệu, số lượng, dung sai yêu cầu hoặc các ghi chú đặc biệt..." rows="4"></textarea>
+                            </div>
+                            <button class="mt-2 flex items-center justify-center gap-2 w-full h-12 rounded-lg bg-primary hover:bg-blue-700 text-white font-bold text-sm shadow-md hover:shadow-lg transform active:scale-[0.99] transition-all">
+                                <span>Gửi yêu cầu kỹ thuật</span>
+                                <span class="material-symbols-outlined text-lg">send</span>
+                            </button>
+                            <p class="text-xs text-center text-text-sub dark:text-gray-500 mt-2">
+                                Bằng việc gửi form, bạn đồng ý với <a class="underline hover:text-primary" href="#">Chính sách bảo mật</a> của chúng tôi.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full bg-white dark:bg-gray-900 border-t border-border-color dark:border-gray-800 py-10">
+        <div class="layout-container px-4 md:px-10 max-w-[1200px] mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex flex-col items-center md:items-start gap-2">
+                    <div class="flex items-center gap-2 font-black text-text-main dark:text-white">
+                        <span class="text-primary text-xl">Quang Hiền Phát</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="text-sm text-text-sub dark:text-gray-400">© 2024 Công ty TNHH Quang Hiền Phát. Bảo lưu mọi quyền.</p>
+                        <p class="text-xs text-text-sub dark:text-gray-400">Phát triển bởi: <a href="tel:0792452918" class="hover:text-primary transition-colors">Trần Đại Tài</a> - <a href="tel:0792452918" class="hover:text-primary transition-colors">0792452918</a></p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <a class="text-text-sub dark:text-gray-400 hover:text-primary transition-colors" href="#">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                    </a>
+                    <a class="text-text-sub dark:text-gray-400 hover:text-primary transition-colors" href="#">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Animations Script -->
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

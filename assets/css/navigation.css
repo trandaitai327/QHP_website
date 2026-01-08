@@ -1,0 +1,58 @@
+/**
+ * Navigation Styles - Quang Hiền Phát
+ * Standardized navigation across all pages
+ */
+
+/* Smooth page transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation link transitions */
+nav a {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1152d4;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* Active state */
+nav a.active {
+  font-weight: 600;
+  color: #1152d4;
+}
+
+/* Smooth transitions for page changes */
+a[href^="index.html"],
+a[href^="about.html"],
+a[href^="products.html"],
+a[href^="capabilities.html"],
+a[href^="contact.html"],
+a[href^="product-detail.html"] {
+  transition: all 0.2s ease;
+}
+
+/* Prevent layout shift during navigation */
+header {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Smooth header transitions */
+header {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}

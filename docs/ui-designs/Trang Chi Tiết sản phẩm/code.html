@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chi tiết Sản phẩm - Quang Hiền Phát</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "primary-dark": "#0c3b9e",
+                        "background-light": "#f8f9fc",
+                        "background-dark": "#101622",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2333",
+                        "text-main": "#0d121b",
+                        "text-secondary": "#4c669a",
+                        "border-light": "#e7ebf3",
+                        "border-dark": "#2d3748",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-white transition-colors duration-200 flex flex-col min-h-screen">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur border-b border-border-light dark:border-border-dark">
+<div class="px-4 md:px-10 py-3 max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-text-main dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Quang Hiền Phát</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-text-main dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Trang chủ</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary pb-0.5" href="#">Sản phẩm</a>
+<a class="text-text-main dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Năng lực gia công</a>
+<a class="text-text-main dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Dự án</a>
+<a class="text-text-main dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Liên hệ</a>
+</nav>
+<button class="md:hidden text-text-main dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-[1280px] mx-auto px-4 md:px-10 py-6 md:py-10">
+<!-- Breadcrumbs -->
+<div class="mb-6 flex flex-wrap items-center gap-2 text-sm text-text-secondary dark:text-gray-400">
+<a class="hover:text-primary transition-colors" href="#">Trang chủ</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Sản phẩm</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Gia công CNC</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-text-main dark:text-white font-medium">Trục Bánh Răng X-200</span>
+</div>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left Column: Gallery -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<div class="w-full aspect-[4/3] bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-border-light dark:border-border-dark shadow-sm relative group">
+<div class="w-full h-full bg-center bg-no-repeat bg-contain p-8" data-alt="close up of precision machined steel gear shaft on white background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFdWJ4yEdDUc_L2T1T8dC4hHf7GslIsXk743zRhqHTrjQObvRgcUoprrE2rO1rOFAHo_TUToX6B03VOWq_pBbcWMetgC_sTJ7aminFWm7qd0RjLk8grSB5LQ5NJCfRJjluXn6Y5Aky838j-rEo7dRJsmzFfV8zYm4pH9dH7BXhwajbxOgTry23DhRGyPy9zidTbeppm_0ERpMylL5PmXtz_dMJmg9pn7WbzeY_8L8mr_isHfjRs3F-mxQ4FTRPhUBYJLtPYzzesrw");'></div>
+<div class="absolute top-4 left-4 bg-primary/10 backdrop-blur-sm text-primary dark:text-white dark:bg-primary/80 px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">zoom_in</span> Click để phóng to
+                    </div>
+</div>
+<div class="grid grid-cols-4 gap-3">
+<button class="aspect-square rounded-lg border-2 border-primary overflow-hidden bg-white dark:bg-surface-dark p-2">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="side view of metal gear part" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDo90z95C2ubIdot-E0SX8Y0rLWN0QDfiqJQznv7pRoBXhJJbxLEEJSxQSUq1J5s7ZZrX9CLze6AIn2lGCr7l8MeihuutXR7ezf_04ttHz0niP73upVQquFSLAR9d-EGFXMYU76tOV7ARYR4rk3gmnYFZgrrTG096J7TUJ-AHqQAJ_viHUG9mQqi_FVcwjKrWzFR9JDcAqEcTxC21czR0N3NdJgqMIrVrvqRvWqb8uS9SdQDEgdOuSU43KX6GcwJai_37WHcOEeJ5c");'></div>
+</button>
+<button class="aspect-square rounded-lg border border-border-light dark:border-border-dark overflow-hidden bg-white dark:bg-surface-dark p-2 hover:border-primary transition-colors">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="technical blueprint drawing of gear" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArbO0nWyT6AQhzW7E29DrrV5DvwmYnA6dBTsApaHtemCf_mRQxTS_KUfKo0TZ_yEJ1mpHb5bV3PPz7bZh1EU5eIGRR2PcgbeV1bopYqkA30dQYXWsF30Gb0GvHkwPgPVXi3CmdtAhpjP2lkxenT5pWSEyFTrr-bQC0ROvpqWu2m83UB3Fp7p15f56HT3IkclYnHJCy1ZG5SR2hGmwhQOSAGssVl1Op_lEwqde02NZ4sUNSsqACIWxQiRaxMddcqUEmWMRUfEz4UXk");'></div>
+</button>
+<button class="aspect-square rounded-lg border border-border-light dark:border-border-dark overflow-hidden bg-white dark:bg-surface-dark p-2 hover:border-primary transition-colors">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="cnc machine cutting metal detail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB0bP_Lt11zyi_uOmPEb-oKwsm01d5nx80rsfUrOrnsrdQz-jKwpjCkp_6Mv2pFq-Csjj61Ulpy0ZibCnPI1_-qpxrotWp86ZGFjBKkm3dvAb8AE08tuQt3OEfV-gabB_sfB3w7-dt8EJaywxPy5x-qf7WASkbFiylszf1vSMFYRb_aXViFBLWtJw_TOpuP3tnxqvSc9Nr_fpFUR0EQjtFuUsWYDapVKau7jVTKOzK-fQxAPVku_3NFqPgI2znrN2_o_Z4fDR4UgbY");'></div>
+</button>
+<div class="aspect-square rounded-lg bg-border-light dark:bg-surface-dark flex items-center justify-center text-text-secondary cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="font-medium">+2 ảnh</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Product Info -->
+<div class="lg:col-span-5 flex flex-col h-full">
+<!-- Status Badge -->
+<div class="flex items-center gap-3 mb-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 border border-green-200 dark:border-green-800">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600 dark:bg-green-400 animate-pulse"></span>
+                        Có thể gia công theo yêu cầu
+                    </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 border border-blue-100 dark:border-blue-800">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                        Tiêu chuẩn ISO 9001:2015
+                    </span>
+</div>
+<h1 class="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-3 tracking-tight">
+                    Trục Bánh Răng Chính Xác X-200
+                </h1>
+<p class="text-text-secondary dark:text-gray-400 text-base leading-relaxed mb-8 border-b border-border-light dark:border-border-dark pb-6">
+                    Linh kiện truyền động chịu tải trọng cao, được gia công chính xác trên máy CNC 5 trục. Thích hợp cho các hệ thống máy công nghiệp nặng và dây chuyền tự động hóa.
+                </p>
+<!-- Technical Specs Table -->
+<div class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl p-5 mb-8 shadow-sm">
+<h3 class="text-sm font-semibold text-text-secondary uppercase tracking-wider mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">settings</span> Thông số kỹ thuật
+                    </h3>
+<div class="grid grid-cols-2 gap-y-4 text-sm">
+<div class="col-span-2 sm:col-span-1">
+<span class="block text-text-secondary dark:text-gray-500 mb-1">Vật liệu</span>
+<span class="font-semibold text-text-main dark:text-white">Thép hợp kim SCM440</span>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<span class="block text-text-secondary dark:text-gray-500 mb-1">Độ cứng</span>
+<span class="font-semibold text-text-main dark:text-white">58 - 62 HRC</span>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<span class="block text-text-secondary dark:text-gray-500 mb-1">Kích thước tối đa</span>
+<span class="font-semibold text-text-main dark:text-white">Ø200mm x 800mm</span>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<span class="block text-text-secondary dark:text-gray-500 mb-1">Dung sai gia công</span>
+<span class="font-semibold text-text-main dark:text-white">±0.005mm</span>
+</div>
+<div class="col-span-2">
+<span class="block text-text-secondary dark:text-gray-500 mb-1">Công nghệ</span>
+<span class="font-semibold text-text-main dark:text-white">Phay CNC 5 Trục, Tôi cao tần, Mài tròn</span>
+</div>
+</div>
+</div>
+<!-- Call to Action Area -->
+<div class="mt-auto">
+<div class="bg-blue-50 dark:bg-primary/10 border border-blue-100 dark:border-primary/20 rounded-lg p-4 mb-6">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5">info</span>
+<p class="text-sm text-text-main dark:text-gray-300">
+<strong>Lưu ý:</strong> Sản phẩm mẫu minh họa năng lực. Chúng tôi nhận gia công theo bản vẽ kỹ thuật riêng của quý khách.
+                            </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex-1 bg-primary hover:bg-primary-dark text-white font-semibold py-3.5 px-6 rounded-lg transition-all shadow-lg shadow-primary/30 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">request_quote</span>
+                            Liên hệ báo giá
+                        </button>
+<button class="flex-1 bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark hover:border-primary dark:hover:border-primary text-text-main dark:text-white font-medium py-3.5 px-6 rounded-lg transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-text-secondary">chat</span>
+                            Trao đổi yêu cầu
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Details Section -->
+<div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 border-t border-border-light dark:border-border-dark pt-16">
+<div class="md:col-span-2">
+<h2 class="text-2xl font-bold text-text-main dark:text-white mb-6">Chi tiết ứng dụng &amp; Công năng</h2>
+<div class="space-y-6 text-text-secondary dark:text-gray-400 leading-relaxed">
+<p>
+                        Trục bánh răng X-200 được thiết kế đặc biệt để chịu được momen xoắn lớn trong môi trường làm việc khắc nghiệt. Bề mặt răng được tôi cứng và mài phẳng để giảm ma sát, tiếng ồn và tăng tuổi thọ sử dụng.
+                    </p>
+<p>
+                        Sản phẩm thường được ứng dụng trong hộp giảm tốc của băng tải công nghiệp, máy nghiền đá, hệ thống tời cẩu trục và các loại máy móc nông nghiệp cỡ lớn.
+                    </p>
+<div class="mt-8">
+<h3 class="text-lg font-semibold text-text-main dark:text-white mb-4">Quy trình kiểm soát chất lượng</h3>
+<ul class="grid sm:grid-cols-2 gap-4">
+<li class="flex items-center gap-3 bg-white dark:bg-surface-dark p-3 rounded-lg border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm">Kiểm tra vật liệu đầu vào (Spectroscopy)</span>
+</li>
+<li class="flex items-center gap-3 bg-white dark:bg-surface-dark p-3 rounded-lg border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm">Đo đạc 3D CMM chính xác</span>
+</li>
+<li class="flex items-center gap-3 bg-white dark:bg-surface-dark p-3 rounded-lg border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm">Kiểm tra độ cứng và vết nứt</span>
+</li>
+<li class="flex items-center gap-3 bg-white dark:bg-surface-dark p-3 rounded-lg border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="text-sm">Test chạy thử nghiệm tải trọng</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="md:col-span-1">
+<div class="bg-background-light dark:bg-surface-dark/50 rounded-xl p-6 border border-border-light dark:border-border-dark sticky top-24">
+<h3 class="text-lg font-bold text-text-main dark:text-white mb-4">Tại sao chọn Quang Hiền Phát?</h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="size-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">factory</span>
+</div>
+<div>
+<h4 class="font-semibold text-text-main dark:text-white text-sm">Hệ thống máy hiện đại</h4>
+<p class="text-xs text-text-secondary mt-1">Sở hữu 20+ máy CNC đời mới từ Nhật Bản (Mazak, Okuma).</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="size-10 rounded-full bg-orange-100 dark:bg-orange-900/50 flex items-center justify-center text-orange-600 shrink-0">
+<span class="material-symbols-outlined">engineering</span>
+</div>
+<div>
+<h4 class="font-semibold text-text-main dark:text-white text-sm">Đội ngũ kỹ sư 10+ năm</h4>
+<p class="text-xs text-text-secondary mt-1">Tư vấn tối ưu bản vẽ để giảm chi phí gia công cho khách hàng.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="size-10 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center text-green-600 shrink-0">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h4 class="font-semibold text-text-main dark:text-white text-sm">Tiến độ cam kết</h4>
+<p class="text-xs text-text-secondary mt-1">Giao hàng đúng hẹn, hỗ trợ đơn hàng gấp trong 48h.</p>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-6 border-t border-border-light dark:border-border-dark">
+<p class="text-sm font-medium text-text-main dark:text-white mb-2">Cần hỗ trợ kỹ thuật ngay?</p>
+<a class="text-primary text-sm font-bold flex items-center gap-1 hover:underline" href="#">
+<span class="material-symbols-outlined text-lg">call</span> 0909 123 456 (Mr. Hiền)
+                        </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Related Products / Capabilities -->
+<div class="mt-24 mb-10">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold text-text-main dark:text-white">Năng lực gia công liên quan</h2>
+<a class="text-primary font-medium text-sm flex items-center hover:underline" href="#">
+                    Xem tất cả danh mục <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="group flex flex-col bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+<div class="w-full aspect-[4/3] bg-gray-100 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="industrial steel flange" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkwa3XGcQtWnfXYn4UOOsIN3to37G3zcOhsYzuay6mt1B7ilQnc3TCVPODoAPnnOkTSocBkG_DCE1ZjqcvDhkTi7KT9wugTjPYfbGcFLbPb-VfLNQfP70uIBZeIU5mhODSQH8H-saZ_Ir7v9X9y_04GWXDzMI2SNeQb6UEFcl4Gp0nVVEavntRuGXPMT6069tm4dYa73toAQBUhve30_jWOE07r83i9cSBnH3aH5UD0_oDJ__LH1zUGH7t7mSEukt3_rkOziPeMf0");'></div>
+<div class="absolute top-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">Phay CNC</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-base font-bold text-text-main dark:text-white mb-1 group-hover:text-primary transition-colors">Mặt Bích Thép C45</h3>
+<p class="text-xs text-text-secondary line-clamp-2 mb-3">Gia công mặt bích chịu áp lực cao cho đường ống dẫn dầu.</p>
+<div class="mt-auto pt-3 border-t border-border-light dark:border-border-dark flex justify-between items-center">
+<span class="text-xs font-medium text-text-secondary">Ø400mm</span>
+<span class="text-xs text-primary font-medium">Chi tiết</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+<div class="w-full aspect-[4/3] bg-gray-100 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="aluminum precision components" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADZTj1qm5f-CYuqnSK7IkGI3sQzXYaYtuQyfUez6kCj-twsJR56OtQXAJUQMPGsLJMkn0d4WzJFojmzaQBr8wVev3yx6B92tNllugEu1WEENpWWGytYnuLNizR2ucYm3GDNCLVgqIph_Nn2CCcysbPz5QKSnNiA2uLL0arq96nKbeF5UbrQBTS2wpDyvDEvwZOe-gE7_d9-oQitPDxxbEr9y777VwCzA--Fe7NU-xkxmjme0OaBobWFqTGsvvUWgxH3xH2qgjqIQw");'></div>
+<div class="absolute top-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">Tiện CNC</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-base font-bold text-text-main dark:text-white mb-1 group-hover:text-primary transition-colors">Trục Vitme Bi</h3>
+<p class="text-xs text-text-secondary line-clamp-2 mb-3">Linh kiện dẫn hướng chính xác cao cho máy tự động.</p>
+<div class="mt-auto pt-3 border-t border-border-light dark:border-border-dark flex justify-between items-center">
+<span class="text-xs font-medium text-text-secondary">L=1200mm</span>
+<span class="text-xs text-primary font-medium">Chi tiết</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+<div class="w-full aspect-[4/3] bg-gray-100 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="brass machined parts" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNxNge-d0pHu5AfhBFoTFUYtqQuG8tYIgX0P1t2pYk6Ysgn-zvttI5lHgxNB8j_ZeDXS3qgFrIg37iDxq7Nrwtg1adwT1uLTTxmVpV4eWX-gTCL7m-rpoaE7Df1wq0pXAjQXL562JTr0eFAEfynx7GsGReLyot9lGPz0HKuYY7LFAc3FvVli6TIpLkOPXmC3v2dsCBlt-Bj82OWXdMSemShmoMOeMNNsmsbCqHubmyBPFofbhgXClT6QqSKOnH6-XAjAz12O5KSYM");'></div>
+<div class="absolute top-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">Đúc &amp; Gia công</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-base font-bold text-text-main dark:text-white mb-1 group-hover:text-primary transition-colors">Bạc Lót Đồng Thau</h3>
+<p class="text-xs text-text-secondary line-clamp-2 mb-3">Bạc trượt chịu mài mòn cho khớp nối máy xúc.</p>
+<div class="mt-auto pt-3 border-t border-border-light dark:border-border-dark flex justify-between items-center">
+<span class="text-xs font-medium text-text-secondary">Đồng Hợp Kim</span>
+<span class="text-xs text-primary font-medium">Chi tiết</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+<div class="w-full aspect-[4/3] bg-gray-100 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="complex metal housing" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMseJQaS4U-ou6t7EZspC6x-UET7nZTRK92DOqrgVny63Hu_sKH5F7AKovAeMEchn1yG7UqDkIpjjl2cYxSW3uIe4_Qag1EraSDjObQn4m1J3Bl2n5mbSgykKT-oPr4DSvoY8E_kaJ_IyryoKgiV7bCy3IblI4UsaRObGlSf6Lg4Qg08QAO3ENJzYEPWCb_otvg4zaFQOeFeIoQOcChhyLdirF3niE7WC9oBAuxqABG78JQb_19zCtk3jwmCH7k4KvQPkKONpCdBY");'></div>
+<div class="absolute top-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">Phay 5 Trục</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-base font-bold text-text-main dark:text-white mb-1 group-hover:text-primary transition-colors">Vỏ Hộp Số Nhôm</h3>
+<p class="text-xs text-text-secondary line-clamp-2 mb-3">Gia công vỏ nhôm định hình phức tạp tản nhiệt tốt.</p>
+<div class="mt-auto pt-3 border-t border-border-light dark:border-border-dark flex justify-between items-center">
+<span class="text-xs font-medium text-text-secondary">Nhôm 6061</span>
+<span class="text-xs text-primary font-medium">Chi tiết</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-light dark:bg-surface-dark border-t border-border-light dark:border-border-dark mt-auto">
+<div class="max-w-[1440px] mx-auto px-4 md:px-10 py-12">
+<div class="flex flex-col md:flex-row justify-between gap-8">
+<div class="flex flex-col gap-4 max-w-sm">
+<div class="flex items-center gap-3 text-text-main dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path></svg>
+</div>
+<h3 class="text-lg font-bold">Quang Hiền Phát</h3>
+</div>
+<p class="text-text-secondary text-sm">Đối tác tin cậy trong lĩnh vực gia công cơ khí chính xác. Chuyên cung cấp giải pháp linh kiện cho ngành công nghiệp nặng và tự động hóa.</p>
+</div>
+<div class="flex flex-wrap gap-12">
+<div class="flex flex-col gap-3">
+<h4 class="text-text-main dark:text-white font-semibold text-sm">Sản phẩm</h4>
+<a class="text-text-secondary text-sm hover:text-primary" href="#">Gia công CNC</a>
+<a class="text-text-secondary text-sm hover:text-primary" href="#">Bánh răng &amp; Trục</a>
+<a class="text-text-secondary text-sm hover:text-primary" href="#">Khuôn mẫu</a>
+<a class="text-text-secondary text-sm hover:text-primary" href="#">Jig &amp; Đồ gá</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-text-main dark:text-white font-semibold text-sm">Công ty</h4>
+<a class="text-text-secondary text-sm hover:text-primary" href="#">Về chúng tôi</a>
+<a class="text-text-secondary text-sm hover:text-primary" href="#">Hồ sơ năng lực</a>
+<a class="text-text-secondary text-sm hover:text-primary" href="#">Tuyển dụng</a>
+<a class="text-text-secondary text-sm hover:text-primary" href="#">Liên hệ</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-text-main dark:text-white font-semibold text-sm">Liên hệ</h4>
+<p class="text-text-secondary text-sm">Hotline: 0909 123 456</p>
+<p class="text-text-secondary text-sm">Email: sales@quanghienphat.com</p>
+<p class="text-text-secondary text-sm">KCN Tân Bình, TP.HCM</p>
+</div>
+</div>
+</div>
+<div class="border-t border-border-light dark:border-border-dark mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-text-secondary text-xs">© 2024 Cơ khí Quang Hiền Phát. All rights reserved.</p>
+<div class="flex gap-4">
+<a class="text-text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

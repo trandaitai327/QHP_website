@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Chi tiết Sản phẩm - Quang Hiền Phát</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Animations CSS -->
+    <link href="assets/css/animations.css" rel="stylesheet"/>
+    <!-- Navigation CSS -->
+    <link href="assets/css/navigation.css" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "primary-dark": "#0c3b9e",
+                        "background-light": "#f8f9fc",
+                        "background-dark": "#101622",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2333",
+                        "text-main": "#0d121b",
+                        "text-secondary": "#4c669a",
+                        "border-light": "#e7ebf3",
+                        "border-dark": "#2d3748",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-white transition-colors duration-200 flex flex-col min-h-screen">
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-50 w-full border-b border-neutral-200 bg-background-light/95 dark:bg-background-dark/95 dark:border-neutral-700 backdrop-blur-sm">
+        <div class="flex items-center justify-between px-6 py-4 lg:px-10 max-w-[1440px] mx-auto">
+            <div class="flex items-center gap-4 text-neutral-900 dark:text-white">
+                <a href="index.html" class="flex items-center gap-4">
+                    <div class="size-8 text-primary">
+                        <span class="material-symbols-outlined !text-[32px]">precision_manufacturing</span>
+                    </div>
+                    <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] hidden sm:block">Quang Hiền Phát</h2>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="index.html">Trang chủ</a>
+                <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="about.html">Giới thiệu</a>
+                <a class="text-sm font-medium text-primary dark:text-white transition-all active" href="products.html">Sản phẩm</a>
+                <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="capabilities.html">Năng lực</a>
+                <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="contact.html">Liên hệ</a>
+            </nav>
+            <button class="md:hidden text-text-main dark:text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-[1280px] mx-auto px-4 md:px-10 py-6 md:py-10">
+        <!-- Breadcrumbs -->
+        <div class="mb-6 flex flex-wrap items-center gap-2 text-sm text-text-secondary dark:text-gray-400 animate-on-scroll animate-fade-up">
+            <a class="hover:text-primary transition-colors" href="index.html">Trang chủ</a>
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+            <a class="hover:text-primary transition-colors" href="products.html">Sản phẩm</a>
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+            <span class="text-text-main dark:text-white font-medium" id="breadcrumbCategory">Sản phẩm</span>
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+            <span class="text-text-main dark:text-white font-medium" id="breadcrumbName">Chi tiết</span>
+        </div>
+
+        <!-- Product Content Container -->
+        <div id="productContent">
+            <!-- Content will be rendered here by JavaScript -->
+            <div class="text-center py-12">
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                <p class="mt-4 text-text-secondary">Đang tải...</p>
+            </div>
+        </div>
+
+        <!-- Error State -->
+        <div id="errorState" class="hidden text-center py-12">
+            <span class="material-symbols-outlined text-6xl text-text-secondary mb-4">error_outline</span>
+            <h2 class="text-2xl font-bold text-text-main dark:text-white mb-2">Sản phẩm không tồn tại</h2>
+            <p class="text-text-secondary mb-6">Không tìm thấy sản phẩm với ID này.</p>
+            <a href="products.html" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+                <span class="material-symbols-outlined">arrow_back</span>
+                Quay lại danh sách sản phẩm
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-light dark:bg-surface-dark border-t border-border-light dark:border-border-dark mt-auto">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-10 py-12">
+            <div class="flex flex-col md:flex-row justify-between gap-8">
+                <div class="flex flex-col gap-4 max-w-sm">
+                    <div class="flex items-center gap-3 text-text-main dark:text-white">
+                        <div class="size-6 text-primary">
+                            <span class="material-symbols-outlined">precision_manufacturing</span>
+                        </div>
+                        <h3 class="text-lg font-bold">Quang Hiền Phát</h3>
+                    </div>
+                    <p class="text-text-secondary text-sm">Đối tác tin cậy trong lĩnh vực gia công cơ khí chính xác. Chuyên cung cấp giải pháp linh kiện cho ngành công nghiệp nặng và tự động hóa.</p>
+                </div>
+                <div class="flex flex-wrap gap-12">
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-text-main dark:text-white font-semibold text-sm">Sản phẩm</h4>
+                        <a class="text-text-secondary text-sm hover:text-primary" href="products.html">Gia công CNC</a>
+                        <a class="text-text-secondary text-sm hover:text-primary" href="products.html">Bánh răng & Trục</a>
+                        <a class="text-text-secondary text-sm hover:text-primary" href="products.html">Khuôn mẫu</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-text-main dark:text-white font-semibold text-sm">Liên hệ</h4>
+                        <p class="text-text-secondary text-sm">Hotline: 0123456789</p>
+                        <p class="text-text-secondary text-sm">Email: sales@quanghienphat.com</p>
+                        <p class="text-text-secondary text-sm">Ngã tư Thủ Đức, Thủ Đức, TPHCM, Việt Nam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-border-light dark:border-border-dark mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex flex-col gap-2">
+                    <p class="text-text-secondary text-xs">© 2024 Cơ khí Quang Hiền Phát. All rights reserved.</p>
+                    <p class="text-text-secondary text-xs">Phát triển bởi: <a href="tel:0792452918" class="hover:text-primary transition-colors">Trần Đại Tài</a> - <a href="tel:0792452918" class="hover:text-primary transition-colors">0792452918</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load products data -->
+    <script src="assets/js/products.js"></script>
+    <!-- Load render script -->
+    <script src="assets/js/render-product-detail.js"></script>
+    <!-- Animations Script -->
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

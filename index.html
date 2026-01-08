@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Trang chủ Quang Hiền Phát</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Animations CSS -->
+    <link href="assets/css/animations.css" rel="stylesheet"/>
+    <!-- Navigation CSS -->
+    <link href="assets/css/navigation.css" rel="stylesheet"/>
+    <!-- Theme Configuration -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1152d4",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+              "neutral-100": "#e7ebf3",
+              "neutral-200": "#cfd7e7",
+              "neutral-700": "#4c669a",
+              "neutral-900": "#0d121b",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-neutral-900 dark:text-white font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Top Navigation -->
+        <header class="sticky top-0 z-50 w-full border-b border-solid border-neutral-200 bg-background-light/95 dark:bg-background-dark/95 dark:border-neutral-700 backdrop-blur-sm">
+            <div class="flex items-center justify-between px-6 py-4 lg:px-10 max-w-[1440px] mx-auto">
+                <div class="flex items-center gap-4 text-neutral-900 dark:text-white">
+                    <a href="index.html" class="flex items-center gap-4">
+                        <div class="size-8 text-primary">
+                            <span class="material-symbols-outlined !text-[32px]">precision_manufacturing</span>
+                        </div>
+                        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] hidden sm:block">Quang Hiền Phát</h2>
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all active" href="index.html">Trang chủ</a>
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="about.html">Giới thiệu</a>
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="products.html">Sản phẩm</a>
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="capabilities.html">Năng lực</a>
+                    <a class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-all" href="contact.html">Liên hệ</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a href="contact.html" class="flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-white text-sm font-bold shadow-lg shadow-primary/30 hover:bg-blue-700 transition-all">
+                        <span class="truncate">Nhận báo giá</span>
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 text-neutral-900 dark:text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content Wrapper -->
+        <main class="flex-1 flex flex-col items-center w-full page-transition">
+            <!-- Hero Section -->
+            <section class="w-full bg-white dark:bg-gray-900 py-12 lg:py-20 border-b border-neutral-200 dark:border-neutral-800 fade-in">
+                <div class="w-full max-w-[1280px] px-6 lg:px-10 mx-auto">
+                    <div class="@container">
+                        <div class="flex flex-col gap-10 lg:flex-row items-center">
+                            <!-- Hero Content -->
+                            <div class="flex flex-col gap-6 lg:w-1/2 justify-center animate-on-scroll animate-fade-left">
+                                <div class="flex flex-col gap-4 text-left">
+                                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 w-fit animate-on-scroll animate-zoom">
+                                        <span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                                        <span class="text-xs font-semibold text-primary uppercase tracking-wide">Đối tác gia công cơ khí tin cậy</span>
+                                    </div>
+                                    <h1 class="text-neutral-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] lg:text-5xl xl:text-6xl text-reveal">
+                                        Gia công &amp; cung cấp thiết bị công nghiệp <span class="text-primary">chính xác cao</span>
+                                    </h1>
+                                    <h2 class="text-neutral-700 dark:text-neutral-300 text-lg font-normal leading-relaxed max-w-xl animate-on-scroll animate-fade-up">
+                                        Quang Hiền Phát chuyên gia công cơ khí chính xác, chế tạo máy và cung cấp giải pháp kỹ thuật toàn diện cho doanh nghiệp sản xuất B2B.
+                                    </h2>
+                                </div>
+                                <div class="flex flex-wrap gap-4 pt-2">
+                                    <a href="contact.html" class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-lg shadow-primary/20 hover:bg-blue-700 transition-all gap-2">
+                                        <span class="material-symbols-outlined">call</span>
+                                        <span>Liên hệ trao đổi</span>
+                                    </a>
+                                    <a href="products.html" class="flex items-center justify-center rounded-lg h-12 px-6 bg-white border border-neutral-200 text-neutral-900 text-base font-bold hover:bg-neutral-50 hover:border-neutral-300 transition-all dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                                        <span>Xem danh mục sản phẩm</span>
+                                    </a>
+                                </div>
+                                <!-- Trust Indicators -->
+                                <div class="flex items-center gap-6 pt-4 text-neutral-500 dark:text-neutral-400 text-sm font-medium">
+                                    <div class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-green-600" style="font-size: 20px;">check_circle</span>
+                                        <span>ISO 9001:2015</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-green-600" style="font-size: 20px;">check_circle</span>
+                                        <span>Giao hàng đúng hạn</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hero Image -->
+                            <div class="w-full lg:w-1/2 animate-on-scroll animate-fade-right">
+                                <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-neutral-100 dark:bg-neutral-800 group parallax-slow" data-alt="High precision CNC machine processing metal parts in a modern factory setting with cool blue lighting">
+                                    <div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent z-10"></div>
+                                    <div class="w-full h-full bg-center bg-cover transition-transform duration-700 hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBo_6wEKOl4hnD6VDyG8vYxsrnnXAc4Tul2G_7YPK-sakYZtRJ72x_MbD8zRxO0B67V2Tdhqw0ISTSeFP6l5uQjhow61jgnjsfHTCUJ9yRnnCUTOi5ddETW10q8IYK_Lt5yn4DL6t4t59QNfFBsDsKXwuv5bl-3TS1AzBIldPiJkjS6VAXw5NI51ozum43qVpm9Y6bs9ublE4pC8J6gAZo9BpQyGOXLLDyuusF2ayM3ogibL_yDKrnlioQ4xO054KgrVLhcVS-46gk");'></div>
+                                    <!-- Floating Card -->
+                                    <div class="absolute bottom-6 left-6 z-20 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md p-4 rounded-xl border border-white/20 shadow-lg max-w-[200px]">
+                                        <div class="flex flex-col gap-1">
+                                            <span class="text-xs text-neutral-500 font-semibold uppercase">Độ chính xác</span>
+                                            <span class="text-xl font-bold text-primary">±0.005mm</span>
+                                            <span class="text-xs text-neutral-600 dark:text-neutral-300">Dung sai tiêu chuẩn</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Features / Stats Section -->
+            <section class="w-full py-16 bg-background-light dark:bg-background-dark">
+                <div class="w-full max-w-[1280px] px-6 lg:px-10 mx-auto">
+                    <div class="flex flex-col gap-10">
+                        <div class="flex flex-col gap-3 max-w-3xl animate-on-scroll animate-fade-up">
+                            <h2 class="text-neutral-900 dark:text-white text-3xl font-bold leading-tight tracking-tight">
+                                Năng lực sản xuất vượt trội
+                            </h2>
+                            <p class="text-neutral-600 dark:text-neutral-300 text-lg">
+                                Chúng tôi cam kết chất lượng đồng nhất và tiến độ nhanh chóng cho mọi đơn hàng gia công từ nhỏ lẻ đến số lượng lớn.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-container">
+                            <!-- Feature 1 -->
+                            <div class="flex flex-col gap-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-6 shadow-sm hover:shadow-md transition-shadow group hover-lift stagger-item">
+                                <div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined">crossword</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-neutral-900 dark:text-white text-lg font-bold mb-2">Độ chính xác cao</h3>
+                                    <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">Hệ thống máy CNC hiện đại đảm bảo dung sai thấp nhất, đáp ứng các bản vẽ kỹ thuật phức tạp.</p>
+                                </div>
+                            </div>
+                            <!-- Feature 2 -->
+                            <div class="flex flex-col gap-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-6 shadow-sm hover:shadow-md transition-shadow group hover-lift stagger-item">
+                                <div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined">factory</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-neutral-900 dark:text-white text-lg font-bold mb-2">Quy mô công nghiệp</h3>
+                                    <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">Năng lực sản xuất hàng loạt với quy trình tối ưu, đáp ứng tiến độ cho các dự án lớn.</p>
+                                </div>
+                            </div>
+                            <!-- Feature 3 -->
+                            <div class="flex flex-col gap-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-6 shadow-sm hover:shadow-md transition-shadow group hover-lift stagger-item">
+                                <div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined">verified</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-neutral-900 dark:text-white text-lg font-bold mb-2">Chuẩn chất lượng</h3>
+                                    <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">Kiểm soát chất lượng nghiêm ngặt (QC) từng công đoạn trước khi xuất xưởng.</p>
+                                </div>
+                            </div>
+                            <!-- Feature 4 -->
+                            <div class="flex flex-col gap-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-6 shadow-sm hover:shadow-md transition-shadow group hover-lift stagger-item">
+                                <div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined">handshake</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-neutral-900 dark:text-white text-lg font-bold mb-2">Giá cả cạnh tranh</h3>
+                                    <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">Chi phí tối ưu cho đối tác B2B, chính sách chiết khấu tốt cho hợp đồng dài hạn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Featured Products Header -->
+            <section class="w-full pt-8 pb-4 bg-white dark:bg-background-dark">
+                <div class="w-full max-w-[1280px] px-6 lg:px-10 mx-auto">
+                    <div class="flex flex-col md:flex-row items-end justify-between gap-4 border-b border-neutral-100 dark:border-neutral-800 pb-6 animate-on-scroll animate-fade-up">
+                        <div class="flex flex-col gap-2">
+                            <div class="inline-flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase">
+                                <span class="w-8 h-[2px] bg-primary"></span>
+                                Danh mục
+                            </div>
+                            <h2 class="text-neutral-900 dark:text-white text-3xl font-bold leading-tight">Sản phẩm tiêu biểu</h2>
+                        </div>
+                        <a class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" href="products.html">
+                            Xem tất cả sản phẩm
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Products Grid -->
+            <section class="w-full pb-20 bg-white dark:bg-background-dark">
+                <div class="w-full max-w-[1280px] px-6 lg:px-10 mx-auto">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 stagger-container">
+                        <!-- Product 1 -->
+                        <div class="group flex flex-col gap-4 hover-lift stagger-item">
+                            <div class="relative w-full aspect-square overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-800" data-alt="Close up of a shiny steel industrial shaft component">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGwOJqOcvScCDjJzJRjnOjp5SWB08z6UsDoj1v2dsjtJeprVibFBAo0s4ziJLEMKKaawJNZiTOPuAJA_FF8cqNCQIiCR3KUSijjZ31MtngZ7P2fOayyJaXMgeJLGPgJIdoSetvd7ag5FxFTetFWeutnWjR1-FVfnuKb6l1KRsYAUuKXLKqddWVyNdWYVf-Dht3oUdpj_ot70POOvoHOSUExeDKiEBK_hVx-zx3IGQ1gp0t1OO3mmBjk7DFHUS8t1Ij9fJAaoSexkU");'></div>
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-neutral-900 dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Trục máy công nghiệp</h3>
+                                <p class="text-neutral-500 dark:text-neutral-400 text-sm mt-1">Gia công thép hợp kim SCM440</p>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="group flex flex-col gap-4">
+                            <div class="relative w-full aspect-square overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-800" data-alt="Golden brass gears interlocking mechanism close up">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9MV5dzU7nUI-7XF_8JozmVvOioy8_G5aV_BCNTiLaBbNLcFu4l2p3BGYZYWVN450FRHIpOOJnolpipxHlFvohbM8DvIk-GhJdQ4avWz6f8zoAuslqH5H69tLepzjq3G31e7gH6J8B8xZegjLxRTG-5Zy2-PwF75BJdMQEGpYonE68KLhrfqMgiAqNdyFpkjuNJdaQGdJ4sYjW6gwp8G1jt1WByRC6BeXMHdLgtP2mW0Vdy9ozX6uIdOKq8JO8RHk9k6F2c5qCJN8");'></div>
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-neutral-900 dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Bánh răng chính xác</h3>
+                                <p class="text-neutral-500 dark:text-neutral-400 text-sm mt-1">Độ chính xác cấp 6, tôi cao tần</p>
+                            </div>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="group flex flex-col gap-4">
+                            <div class="relative w-full aspect-square overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-800" data-alt="Milled aluminum CNC part with complex geometry on a workbench">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBmUsa2w0ghJt_Dcm3MLfUHXbXJrzNe5ppjAktToI4TkYnIcSuhe4ILz7nWjUNqCN_nSmxHv_3Ra6xvljZFm0X9axHGVAtcYgQOFc52d0up0XQP35FQFR9_ChfxNG6m5oVm5kwMUTkRGjmUCOL0LxyuqFhA-bqzp1hww1TXdnRFX_HHwkp50W3WJzuYGi8Or72DHIscrY0jurMTmdfRrUmRV57-fAME62Baih2LHK8EqwF5_IsxvjtvZ-njEEXI_mrJ-P6pu_9oGek");'></div>
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-neutral-900 dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Chi tiết phay CNC</h3>
+                                <p class="text-neutral-500 dark:text-neutral-400 text-sm mt-1">Nhôm 6061/7075, Anodized</p>
+                            </div>
+                        </div>
+                        <!-- Product 4 -->
+                        <div class="group flex flex-col gap-4">
+                            <div class="relative w-full aspect-square overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-800" data-alt="Heavy duty steel mold component for plastic injection">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNERKAz0r_eIT35pY7aVdYWrqDvp4GobrwaWUB8cDBZHajGMFb6qklHbuhG8_KpR7j_Qnks8sz6MTlTAikg1wRu-OrY70eMXEld2tq5_ORSN1yHqDRWS_pPgF0lXtnSFWCKRzGbhY7wqMUHeFasChEplU1ImAEm4CYS-_g2rP1ZFBqy7oCWjEfUvaG5oqeDW04d18D7uKuxO96dtdBYN_oIiCX3K7Jmmz5wps5nKqIxijnG_sR_ZQEJrYBWESYJ7_rGM_WbAaYHcg");'></div>
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-neutral-900 dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Khuôn mẫu kim loại</h3>
+                                <p class="text-neutral-500 dark:text-neutral-400 text-sm mt-1">Thép làm khuôn SKD11/SKD61</p>
+                            </div>
+                        </div>
+                        <!-- Product 5 -->
+                        <div class="group flex flex-col gap-4">
+                            <div class="relative w-full aspect-square overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-800" data-alt="Detailed view of small metal fasteners and assembly components">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2GZekD47kmX0-F5ExVbPqiO9SoxskFPhmP1Ww9uOlFBKyPU4Q54GdJptN-bOIfbusvcTj4OuPnANOh_zT6E52cJ1XLmLAfFrjeO7uLsFnkBHUrQNrduLXwO0gYZE7qxzfxDLHbbq9AqsSxOrGig1IMgJae7g25L758tGhygxQbJJ0bogR2dVATO3Bwlpr3PfJrTBZH8F1h0tXkLmdhLsZL4m3tV8Fp8_qwPAo2-eEVZZgeE2V32BcbXl4g5mXhJySYC7_GtfKDoE");'></div>
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-neutral-900 dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Linh kiện lắp ráp</h3>
+                                <p class="text-neutral-500 dark:text-neutral-400 text-sm mt-1">Sản xuất theo bản vẽ kỹ thuật</p>
+                            </div>
+                        </div>
+                        <!-- Product 6 -->
+                        <div class="group flex flex-col gap-4">
+                            <div class="relative w-full aspect-square overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-800" data-alt="Turned brass parts on a dark industrial background">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCqf-Lgp4EJ5IHcr0c6Yb0NYwMA0qY-QgfMms3tzLXnWmDLLjqMsQ820Qv-S9bvsUFo62s5eDJhZ68MuWCIPTtSQ6nt-To3ktFOspBfJuerZfchHcHemDR9i-CibIYSMPpWFYawsJUliKaQC9X7VEtzkuCvenZ5cW_MBpl5QWPri2Dou-scRh_449I3qMrwHLIVOcyUs3iqP-7KxSBXxCXzyST_4JBNaYGoRGTVKYZP7IDu7otNgwB2iwANsSh5ARQi8yKLs_4nMLI");'></div>
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-neutral-900 dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Chi tiết tiện tự động</h3>
+                                <p class="text-neutral-500 dark:text-neutral-400 text-sm mt-1">Tiện CNC hàng loạt, giá tốt</p>
+                            </div>
+                        </div>
+                        <!-- Product 7 -->
+                        <div class="group flex flex-col gap-4">
+                            <div class="relative w-full aspect-square overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-800" data-alt="Metal sheet laser cutting process sparks flying">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDW0GPMKxXHxE5Kn2T4BIUR8JOXeUOhEExJZYTOCmQE42F6fZvlKO2vY_ChiSUhCG_EtaTS1Sb5_pa7aHhfecSyaaJVuZHWYwOi4tvnzaLNqjKO6XMWjGT2gv2PLOSolSjc0a4E_iYEXoCJsFTiNguwEl2HWj537Gj_zOBH_ADzT_iC9M66bKU-iac1S2sOSGw9HQdpmL5stLz_n1NUUS4yrBM5y65OT6cyekbXIzSsanV2I14NRnBxY2y9XD4GDT3g2w3LfY4MP-I");'></div>
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-neutral-900 dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Cắt Laser &amp; Chấn gấp</h3>
+                                <p class="text-neutral-500 dark:text-neutral-400 text-sm mt-1">Gia công kim loại tấm</p>
+                            </div>
+                        </div>
+                        <!-- Product 8 -->
+                        <div class="group flex flex-col gap-4">
+                            <div class="relative w-full aspect-square overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-800" data-alt="Welding torch joining two metal plates with bright arc">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZ5_mV5FZ1cc_9ZrABzfldk9eZkt-JXyytqlA5E6e5B3b7tXEOCOdQLkGL9cA3iqZYuPDhL5DMfJmj_2-PG5GGFAZWqdUr3X_6gd4X4yMq9JiVdg9sLS9RZUlHDioc6nYFkNGntQg9pYCZOTr7EnCyYEjkTiv9MbtXiV_Vr4vfRh3119qT1HOpINcO7oMnSe8mtqpALFoQkQKKb1IHfzn5Jz4varIx_3m1ldLPLSqbBYayNk1b-ssjBCwUTEbaROpxtCnHnc-PkwY");'></div>
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-neutral-900 dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Dịch vụ Hàn &amp; Kết cấu</h3>
+                                <p class="text-neutral-500 dark:text-neutral-400 text-sm mt-1">Hàn Tig/Mig, kết cấu thép</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex justify-center md:hidden">
+                        <a href="products.html" class="w-full rounded-lg border border-neutral-200 py-3 text-sm font-bold text-neutral-900 dark:border-neutral-700 dark:text-white text-center">
+                            Xem tất cả sản phẩm
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to Action Section -->
+            <section class="w-full bg-neutral-900 text-white py-16 px-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/20 skew-x-[-20deg] translate-x-12 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-1/4 h-full bg-blue-600/10 skew-x-[20deg] -translate-x-12 blur-2xl"></div>
+                <div class="relative z-10 max-w-[960px] mx-auto text-center flex flex-col gap-8 items-center animate-on-scroll animate-zoom">
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight">Bạn cần báo giá gia công theo yêu cầu?</h2>
+                    <p class="text-neutral-300 text-lg max-w-2xl">Gửi bản vẽ kỹ thuật hoặc yêu cầu chi tiết cho chúng tôi. Đội ngũ kỹ thuật của Quang Hiền Phát sẽ phản hồi và tư vấn giải pháp tối ưu chi phí trong vòng 24h.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+                        <a href="contact.html" class="flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-4 text-white text-lg font-bold shadow-xl shadow-primary/40 hover:bg-blue-600 transition-all hover:-translate-y-1">
+                            <span class="material-symbols-outlined">mail</span>
+                            <span>Gửi yêu cầu báo giá</span>
+                        </a>
+                        <a href="contact.html" class="flex items-center justify-center gap-2 rounded-lg bg-transparent border border-neutral-600 px-8 py-4 text-white text-lg font-bold hover:bg-white/10 transition-all">
+                            <span class="material-symbols-outlined">call</span>
+                            <span>Hotline: 0123456789</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="w-full bg-background-light dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800 pt-16 pb-8">
+            <div class="w-full max-w-[1280px] px-6 lg:px-10 mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                    <!-- Company Info -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-3 text-neutral-900 dark:text-white">
+                            <div class="size-6 text-primary">
+                                <span class="material-symbols-outlined">precision_manufacturing</span>
+                            </div>
+                            <h3 class="text-lg font-bold">Quang Hiền Phát</h3>
+                        </div>
+                        <p class="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed">
+                            Đơn vị chuyên gia công cơ khí chính xác và cung cấp giải pháp công nghiệp hàng đầu. Cam kết chất lượng - Uy tín - Tận tâm.
+                        </p>
+                    </div>
+                    <!-- Links -->
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-neutral-900 dark:text-white font-bold text-base">Liên kết nhanh</h4>
+                        <div class="flex flex-col gap-2 text-sm text-neutral-500 dark:text-neutral-400">
+                            <a class="hover:text-primary transition-colors" href="about.html">Về chúng tôi</a>
+                            <a class="hover:text-primary transition-colors" href="products.html">Sản phẩm &amp; Dịch vụ</a>
+                            <a class="hover:text-primary transition-colors" href="capabilities.html">Năng lực sản xuất</a>
+                            <a class="hover:text-primary transition-colors" href="contact.html">Liên hệ</a>
+                        </div>
+                    </div>
+                    <!-- Contact -->
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-neutral-900 dark:text-white font-bold text-base">Thông tin liên hệ</h4>
+                        <div class="flex flex-col gap-3 text-sm text-neutral-500 dark:text-neutral-400">
+                            <div class="flex items-start gap-2">
+                                <span class="material-symbols-outlined text-primary text-lg mt-0.5">location_on</span>
+                                <span>Ngã tư Thủ Đức, Thủ Đức, TPHCM, Việt Nam</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary text-lg">call</span>
+                                <span>0123456789</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                                <span>lienhe@quanghienphat.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Social / Maps -->
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-neutral-900 dark:text-white font-bold text-base">Bản đồ</h4>
+                        <div class="w-full h-32 rounded-lg bg-neutral-200 dark:bg-neutral-800 overflow-hidden relative">
+                            <!-- Placeholder Map -->
+                            <div class="w-full h-full bg-cover bg-center" data-location="Ho Chi Minh City Map" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlQ7W5BJ6bQIZVTFoLZ7uuAqm3dZn1jC9TRHjm_vNmBLZOBvBn9IS-lUV7um-BG_VQkO83DSkMOkg9GEvK09bnHYlJnlsNN0rOse7ITxb4zZomcwCmOQGOnZ4DtaMziOQcmDBgGhMxOFKS-n0ewAnzCo-kcA_Poxn8diIuMoNOfd5-Pr20jkOUR_OkWB3J80YRp9NgkooLc4ZKMKCg1CoBZ-zGKT1KajOYawL9yQpUdRDd37VMTeNIwI_nfaoZuraA4n3W6BdZ4P4')"></div>
+                            <div class="absolute inset-0 bg-black/10 flex items-center justify-center">
+                                <span class="bg-white px-3 py-1 rounded text-xs font-bold text-neutral-900 shadow-sm">Xem bản đồ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-8 border-t border-neutral-200 dark:border-neutral-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-neutral-500 dark:text-neutral-400">
+                    <div class="flex flex-col gap-2">
+                        <p>© 2024 Quang Hiền Phát. Bảo lưu mọi quyền.</p>
+                        <p class="text-xs">Phát triển bởi: <a href="tel:0792452918" class="hover:text-primary transition-colors">Trần Đại Tài</a> - <a href="tel:0792452918" class="hover:text-primary transition-colors">0792452918</a></p>
+                    </div>
+                    <div class="flex gap-6">
+                        <a class="hover:text-primary transition-colors" href="#">Chính sách bảo mật</a>
+                        <a class="hover:text-primary transition-colors" href="#">Điều khoản sử dụng</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Animations Script -->
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>
